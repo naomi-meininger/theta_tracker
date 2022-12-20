@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+                <meta charset = "utf-8">
+                <meta name = "viewport" content="width=device-width">
+                <title>Theta Tracker!</title>
+                <link href="style.css" rel="stylesheet" type="text/css"
+                />
+                <!-- <script src="script.js"></script> -->
+        </head>
+        <body>
+                <h1>Welcome to the Theta Tracker!</h1>
+                <p> Use this handy dandy website to keep track of your points, dues, and service hours!</p>
+                
+                <h3>Click here to Log in </h3>
+                <form>
+                        
+                        <button type = "button" onclick = "run()" > Login</button>
+                        <script>
+                                function run() {
+                                        alert("Hello! Welcome to Theta Tracker");
+
+
+                                        // Maddy: just change the num_points part of the correct person
+                                        let members = [
+                                                {
+                                                first_name: "Naomi",
+                                                last_name: "Meininger",
+                                                password: "1234",
+                                                num_points: 0,
+                                                dues: 500,    
+                                                },
+
+                                                {
+                                                first_name: "Naomi",
+                                                last_name: "Ephraim",
+                                                password: "1234",
+                                                num_points: 0,
+                                                dues: 500,    
+                                                },
+                                                {
+                                                first_name: "Maddy",
+                                                last_name: "Simms",
+                                                password: "1234",
+                                                num_points: 0,
+                                                dues: 500,    
+                                                },
+                                                {
+                                                first_name: "Tate",
+                                                last_name: "Olitt",
+                                                password: "1234",
+                                                num_points: 0,
+                                                dues: 500,    
+                                                },
+                                                
+                                        ]
+
+
+
+
+
+
+
+
+
+
+
+
+                                        // assume array was made beforehand
+
+                                        var first = prompt("What is your first name?");
+                                        var last = prompt("What is your last name?");
+                                        var pass = prompt("What is your password?");
+                                        let person = members.find(person => person.first_name === first && person.last_name === last && person.password === pass);
+                                        if (person === undefined ) {
+                                                alert("Invalid! Make sure you spelled your name and password correctly!");
+                                                return;
+                                        }
+                                        
+
+                                        var input = prompt("What would you like to do?: Check Points (type p) or Check Dues (type d)");
+
+                                        if (input == 'p') {
+                                        alert("You have " + person.num_points + " points.");
+
+                                        } else if (input == 'd') {
+
+                                                alert("Current dues: " + person.dues + " dollars");
+
+                                        } else {
+                                                alert("Invalid input");
+                                                return;
+                                        }
+
+
+
+                                        }
+                        </script>
+            
+                </form>
+                <img src="thetagirls.png" alt="Theta Sister Circa 2022" width="550" height="450">
+                <img src="theta2.jpg" alt="Theta Sister Circa 2022" width="570" height="450">
+                <img src="theta3.jpg" alt="Theta Sister Circa 2022" width="570" height="450">
+
+
+                
+        </body>
+</html>
