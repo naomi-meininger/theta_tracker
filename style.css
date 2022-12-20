@@ -1,0 +1,48 @@
+header {
+        background-color: black;
+
+}
+
+
+
+body {
+
+background-color: pink;
+
+
+}
+
+h1 {
+   color: lightgoldenrodyellow;   
+   text-align: center;  
+
+}
+
+p {
+   color: lightgoldenrodyellow;    
+   text-align: center;  
+ 
+}
+
+h3 {
+
+ text-align: center;  
+
+
+}
+
+form {
+text-align: center;  
+
+}
+
+img {
+        text-align: center;
+}
+
+button {
+        text-align: center;
+        color: black;
+        background-color: pink;
+
+}
